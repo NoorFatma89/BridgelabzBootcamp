@@ -1,5 +1,6 @@
 package com.bridgelabz.employeewage;
 import java.util.Random;
+import java.util.Scanner;
 
 public class EmployeeWage {
 	public static void main(String[] args) {
@@ -7,6 +8,7 @@ public class EmployeeWage {
 		System.out.println();
 		isEmployeePresentOrAbsent();
 		dailyEmployeeWage();
+		partTimeEmployeeWage();
 	}
 	
 	public static void isEmployeePresentOrAbsent() {
@@ -20,20 +22,32 @@ public class EmployeeWage {
 			System.out.println("Employee is Present");
 		}	
 	}
-	
-	public static void dailyEmployeeWage() {
-			int wagePerHour=20, fullDayHour=8;
-			double employeeWage=wagePerHour*fullDayHour;
-			System.out.println("Daily Employee Wage is : " +employeeWage);
-	}
 
-//		public static void dailyEmployeeWage() {
-//			Scanner scanner=new Scanner(System.in);
-//			System.out.println("Enter Employee per Hour : ");
-//			int wagePerHour=scanner.nextInt();
-//			System.out.println("Daily Employee Wage is : ");
-//			int fullDayHour=scanner.nextInt();
-//			double employeeWage=wagePerHour*fullDayHour;
-//		    System.out.println("Daily Employee Wage is : " +employeeWage);
-//		}
+	public static void dailyEmployeeWage() {
+	    int wagePerHour=20,fullDayHour=8;
+	    System.out.println("Enter Employee's daily Hour : ");
+	    Scanner scanner=new Scanner(System.in);
+		int hour=scanner.nextInt();
+	    if(hour==fullDayHour) {
+		    double employeeWage=wagePerHour*fullDayHour;
+		    System.out.println("It's a Full Time Employee and Daily Employee Wage is : " +employeeWage);
+	    }
+	}
+	
+//	public static void dailyEmployeeWage() {
+//		int wagePerHour=20, fullDayHour=8;
+//		double employeeWage=wagePerHour*fullDayHour;
+//		System.out.println("Daily Employee Wage is : " +employeeWage);
+//	}
+	
+	public static void partTimeEmployeeWage() {
+		int wagePerHour=20, partTimeHour=4; 
+		System.out.println("Enter Employee's daily hour: ");
+		Scanner scanner=new Scanner(System.in);
+		int hour=scanner.nextInt();
+		if(hour==partTimeHour) {
+			double employeeWage=wagePerHour*partTimeHour;
+			System.out.println("It's a Part Time Employee and Daily Employee Wage is : " +employeeWage);
+		}
+	}
 }
