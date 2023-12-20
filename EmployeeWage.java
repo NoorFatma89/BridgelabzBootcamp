@@ -79,4 +79,24 @@ public class EmployeeWage {
 			System.out.println("Incorrect Choice! ");
 		}
 	}
+	
+	public static void monthlyWage() {
+		int workingDay=20, wagePerHour=20,fullDayHour=8,partTimeHour=4;
+	    System.out.println("Enter Employee's daily Hour : ");
+	    Scanner scanner=new Scanner(System.in);
+		int hour=scanner.nextInt();
+	    if(hour==fullDayHour) {
+		    double employeeWage=workingDay*wagePerHour*fullDayHour;
+		    System.out.println("It's a Full Time Employee and Daily Employee Wage is : " +employeeWage);
+	    }
+	    else if(hour==partTimeHour) {
+			double employeeWage=workingDay*wagePerHour*partTimeHour;
+			System.out.println("It's a Part Time Employee and Daily Employee Wage is : " +employeeWage);
+		}	
+	}
+//	public static void monthlyWage() {
+//		int workingDay=20,wagePerHour=20,fullDayHour=8;
+//		double monthlyWage=workingDay*wagePerHour*fullDayHour;
+//		System.out.println("Employee Monthly Wage is :" +monthlyWage);
+//	}
 }
