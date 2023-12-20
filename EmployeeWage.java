@@ -7,8 +7,13 @@ public class EmployeeWage {
 		System.out.println("Welcome To Employee Wage Computation Program!");
 		System.out.println();
 		isEmployeePresentOrAbsent();
+		System.out.println();
 		dailyEmployeeWage();
+		System.out.println();
 		partTimeEmployeeWage();
+		System.out.println();
+		switchCase();
+		System.out.println();
 	}
 	
 	public static void isEmployeePresentOrAbsent() {
@@ -48,6 +53,30 @@ public class EmployeeWage {
 		if(hour==partTimeHour) {
 			double employeeWage=wagePerHour*partTimeHour;
 			System.out.println("It's a Part Time Employee and Daily Employee Wage is : " +employeeWage);
+		}
+	}
+	
+	public static void switchCase() {
+		System.out.println("What do you want to know ?");
+		System.out.println("To check Employee is Present or Absent Press 1: ");
+		System.out.println("To Calculate Full-Time Employee's Daily Wage Press 2: ");
+		System.out.println("To Calculate Part-Time Employee's Daily Wage Press 3: ");
+		
+		Scanner scanner=new Scanner(System.in);
+		int choice=scanner.nextInt();
+		 
+		switch(choice){
+		case 1:
+			isEmployeePresentOrAbsent();
+			break;
+		case 2:
+			dailyEmployeeWage();
+			break;
+		case 3:
+			partTimeEmployeeWage();
+			break;
+		default:
+			System.out.println("Incorrect Choice! ");
 		}
 	}
 }
