@@ -14,6 +14,7 @@ public class EmployeeWage {
 		System.out.println();
 		switchCase();
 		System.out.println();
+		calculatingWageWithCondition();
 	}
 	
 	public static void isEmployeePresentOrAbsent() {
@@ -99,4 +100,21 @@ public class EmployeeWage {
 //		double monthlyWage=workingDay*wagePerHour*fullDayHour;
 //		System.out.println("Employee Monthly Wage is :" +monthlyWage);
 //	}
+	
+	public static void calculatingWageWithCondition() {
+		int wagePerHour=20, totalHours=0,totalDays=0;
+		while(totalHours<100 && totalDays<20) {
+		    System.out.println("Enter Employee's daily Hour : ");
+		    Scanner scanner=new Scanner(System.in);
+			int hour=scanner.nextInt();
+			totalHours+=hour;
+			System.out.println("Enter Days : ");
+			int days=scanner.nextInt();
+			totalDays+=days;    
+		}
+		double employeeWage=wagePerHour*totalHours*totalDays;
+		System.out.println("Total Working Hour or day is reached for a Month!");
+		System.out.println("Your Wage is :" +employeeWage);
+	    
+	}
 }
