@@ -40,12 +40,6 @@ public class EmployeeWage {
 	    }
 	}
 	
-//	public static void dailyEmployeeWage() {
-//		int wagePerHour=20, fullDayHour=8;
-//		double employeeWage=wagePerHour*fullDayHour;
-//		System.out.println("Daily Employee Wage is : " +employeeWage);
-//	}
-	
 	public static void partTimeEmployeeWage() {
 		int wagePerHour=20, partTimeHour=4; 
 		System.out.println("Enter Employee's daily hour: ");
@@ -95,11 +89,6 @@ public class EmployeeWage {
 			System.out.println("It's a Part Time Employee and Daily Employee Wage is : " +employeeWage);
 		}	
 	}
-//	public static void monthlyWage() {
-//		int workingDay=20,wagePerHour=20,fullDayHour=8;
-//		double monthlyWage=workingDay*wagePerHour*fullDayHour;
-//		System.out.println("Employee Monthly Wage is :" +monthlyWage);
-//	}
 	
 	public static void calculatingWageWithCondition() {
 		int wagePerHour=20, totalHours=0,totalDays=0;
