@@ -15,5 +15,7 @@ public class Main {
 			employeeWage.switchCase();
 			System.out.println();
 			employeeWage.calculatingWageWithCondition();
+			System.out.println();
+			employeeWage.wageForMultipleCompanies();
 		}
 }
