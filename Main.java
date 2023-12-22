@@ -4,8 +4,8 @@ public class Main {
 
 		public static void main(String[] args) {
 			System.out.println("Welcome To Employee Wage Computation Program!");
-			System.out.println();
 			EmployeeWage employeeWage=new EmployeeWage();
+			System.out.println();
 			employeeWage.isEmployeePresentOrAbsent();
 			System.out.println();
 			employeeWage.dailyEmployeeWage();
@@ -14,7 +14,7 @@ public class Main {
 			System.out.println();
 			employeeWage.switchCase();
 			System.out.println();
-			employeeWage.calculatingWageWithCondition();
+			employeeWage.calculateWageWithCondition();
 			System.out.println();
 			employeeWage.wageForMultipleCompanies();
 		}
