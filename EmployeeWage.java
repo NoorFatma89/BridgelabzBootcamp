@@ -7,6 +7,7 @@ public class EmployeeWage {
 		System.out.println();
 		isEmployeePresentOrAbsent();
 	}
+	//	Calculating weather Employee is Present or Absent
 	public static void isEmployeePresentOrAbsent() {
 		int isAbsent=0;
 		Random random=new Random();
