@@ -96,7 +96,7 @@ public class EmployeeWage {
 	}
 
 //	Calculating Wage with some Condition
-	public void calculatingWageWithCondition() {
+	public void calculateWageWithCondition() {
 		int wagePerHour=20, totalHours=0,totalDays=0;
 		while(totalHours<100 && totalDays<20) {
 		    System.out.print("To calculate Wage Enter Employee's daily Hour : ");
