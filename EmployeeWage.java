@@ -113,4 +113,20 @@ public class EmployeeWage {
 		System.out.println("Your Wage is :" +employeeWage);  
 	}
 	
+//	calculating Wage for Multiple Companies
+	public void wageForMultipleCompanies() {
+		Scanner scanner=new Scanner(System.in);
+		System.out.print("To calculate Total Wage Enter Wage Per Hour of your Company : ");
+	    double wagePerHour=scanner.nextInt();
+	    System.out.print("Enter Total Working Days : ");
+	    int workingDays=scanner.nextInt();
+	    System.out.print("Enter per day Working Hour : ");
+	    int workingHour=scanner.nextInt();	
+	    double wage=wageForMultipleCompanies( wagePerHour, workingDays, workingHour);
+	    System.out.println("Employee Wage is: " +wage);
+	    scanner.close();
+	}
+	public double wageForMultipleCompanies(double wagePerHour,int workingDays,int workingHour) {
+		return (wagePerHour*workingDays*workingHour);
+	}	
 }
